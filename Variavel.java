@@ -31,5 +31,6 @@ public class Variavel{
         else{
             System.out.println("Seu nome é: " + nome + ", você tem " + idade + " anos, e não é casado!");
         }
+        
     }
 }
