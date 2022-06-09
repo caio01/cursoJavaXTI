@@ -3,9 +3,9 @@
  * Aula 010 - Curso Java XTI
  */
 
-public class HelloWorld{
+public class ClassesWrapper{
 
-    public public static void main(String[ args]) {
+    public static void main(String[] args) {
         Integer idade = new Integer(31);
         Double preco = new Double("12.45");
         int i = preco.intValue();
@@ -17,6 +17,8 @@ public class HelloWorld{
         float f1 = Float.parseFloat("3.14F");
 
         int i2 = Integer.valueOf("101011", 2);
+
+        
 
     }
 } 
