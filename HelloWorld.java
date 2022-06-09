@@ -13,7 +13,8 @@ public class HelloWorld{
          * \\ -> inserir uma única barra (\)
          * \" -> inserir "aspas"
          */
-        System.out.println("Java SE"); 
+        System.out.println("Java SE");
+        System.out.println("Desenvolvedor JAVA"); 
         
     }
 }
