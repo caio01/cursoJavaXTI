@@ -1,3 +1,9 @@
+/**
+ * @author Caio Oliveira
+ * Aula 036 - Curso Java XTI
+ */
+
+
 public class Conta {
     
     String cliente;
@@ -11,5 +17,14 @@ public class Conta {
         if(valor <= saldo){
             saldo -= valor;
         }
+    }
+
+    void deposita(double valor){
+        saldo += valor;
+    }
+
+    void transferePara(Conta destino, double valor){
+        this.saca(valor);
+        destino.deposita(valor);
     }
 }
