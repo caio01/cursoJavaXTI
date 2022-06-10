@@ -10,7 +10,7 @@ public class Fibonacci {
 
         System.out.println(anterior);
 
-        while(proximo < 50){
+        while(proximo < 56){
             System.out.println(proximo);
             proximo = anterior + proximo; //proximo num Fibonacci
             anterior = proximo - anterior; //atualiza anterior

@@ -15,12 +15,12 @@ public class Desafio_IMC {
         String peso = JOptionPane.showInputDialog("Qual seu peso em kg?");
         String altura = JOptionPane.showInputDialog("Qual sua altura em m?");
         
-        double pesoEmQuilogramas = Double.parseDouble(peso);
+        int pesoEmQuilogramas = Integer.parseInt(peso);
         double alturaEmMetros = Double.parseDouble(altura);
         double imc = pesoEmQuilogramas / (alturaEmMetros * alturaEmMetros);
 
-        String msg = (imc >= 20 && imc <= 25) ? "Peso ideal" : "Fora do peso"; 
-        msg = "IMC = " + imc + "\n" + msg;  
+        String msg = (imc >= 20 && imc <= 25) ? "Peso ideal" : "Fora do peso";
+        msg = "IMC = " + imc + "\n" + msg;
         
         JOptionPane.showMessageDialog(null, msg);
         //System.out.println("IMC = " + imc);
