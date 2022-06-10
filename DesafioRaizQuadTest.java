@@ -9,7 +9,7 @@ import java.lang.Class.DesafioRaizQuad;
 public class DesafioRaizQuadTest {
     public static void main(String[] args) {
         DesafioRaizQuad r = new DesafioRaizQuad();
-        int x = r.raiz(4);
+        int x = r.raiz(27);
         
         System.out.println(x);
     }

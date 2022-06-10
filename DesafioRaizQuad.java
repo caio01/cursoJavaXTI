@@ -2,12 +2,13 @@ public class DesafioRaizQuad {
     
     
     int raiz(int num){
-        int impar = 1;
-        if(num > impar){
+        int raiz = 0, impar = 1;
+        while(num >= impar){
             num -= impar;
             impar += 2;
+            raiz++;
         }
-        return num;
+        return raiz;
 
     }
 }
