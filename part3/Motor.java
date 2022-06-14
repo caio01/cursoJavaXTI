@@ -1,3 +1,8 @@
+/**
+ * @author Caio Oliveira
+ * Aulas 044 e 045 - Curso Java XTI
+*/
+
 package part3;
 
 public class Motor{
