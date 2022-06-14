@@ -1,10 +1,10 @@
 /**
  * @author Caio Oliveira
- * Aulas 047 e 048 - Curso Java XTI
+ * Aulas 047 e 051 - Curso Java XTI
 */
 package part3.Herança;
 
-public class Animal {
+public abstract class Animal {
     double peso;
     String comida;
     //private p1; //não está visível pelas subclasses
@@ -15,7 +15,7 @@ public class Animal {
         this.comida = comida;
     }
 
-    void dormir(){System.out.println("Dormiu!");}
-    void fazerBarulho(){System.out.println("Fazendo barulho!");}
+    final void dormir(){System.out.println("Dormiu!");}
+    abstract void fazerBarulho();
     
 }

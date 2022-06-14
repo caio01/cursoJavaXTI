@@ -1,6 +1,6 @@
 /**
  * @author Caio Oliveira
- * Aulas 047 e 048 - Curso Java XTI
+ * Aulas 047 e 051 - Curso Java XTI
 */
 package part3.Herança;
 
