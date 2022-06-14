@@ -20,8 +20,12 @@ public class Matematica {
         }
     }
 
-    double soma(double um, double dois){
-        return um + dois;
+    double soma(double ... numeros){
+        double total = 0;
+        for(double n : numeros){
+            total += n;
+        }
+        return total;
     }
     
 }

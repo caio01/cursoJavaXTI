@@ -9,7 +9,7 @@ public class MatematicaTest {
         int ma = m.maior(10, 20);
         System.out.println(ma);
 
-        double so = m.soma(10, 20);
+        double so = m.soma(10, 20,30);
         System.out.println(so);
     }
 }
