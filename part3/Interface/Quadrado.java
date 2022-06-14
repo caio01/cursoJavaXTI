@@ -14,7 +14,6 @@ public class Quadrado implements AreaCalculavel{
 
     @Override
     public double calculaArea() {
-        // TODO Auto-generated method stub
         return lado * lado;
     }
 }
