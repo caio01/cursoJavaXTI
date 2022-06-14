@@ -17,10 +17,12 @@ public class Variavel{
         long l = 9_000_000_000_000_000_000L;//9 quintilhões
         double d = 1.7976931348623157E+308D;//IEEE 754
         float f = 123F;
+        System.out.println(b+i+l+d+f);
 
         byte bb = 0b01010101;//8 bits / 1 byte
         short ss = 0b0101010101010101;//16 bits / 2 bytes
         int ii = 0b01010101010101010101010101010101;//16 bits / 2 bytes
+        System.out.println(bb+ss+ii);
 
         i = s;       //Cast Implícito
         i = (int) l; //Cast Explícito

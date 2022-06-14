@@ -28,6 +28,7 @@ public class Operadores {
         d++; //pré-incremento
         --d2; //pós-incremento
         System.out.println(d2);
+        System.out.println(d+s+z);
 
 
 
@@ -56,6 +57,7 @@ public class Operadores {
         x *= 3; //equivalente à x = x * 3;
         x /= 3; //equivalente à x = x / 3;
         x %= 3; //equivalente ao resto da divisão de 3/3;
+        System.out.println(x);
 
 
 
@@ -65,6 +67,7 @@ public class Operadores {
         System.out.println(r);
 
         String sexo = "Masculino", pais = "Brasil";
+        System.out.println(sexo + pais);
 
 
         Scanner sc = new Scanner(System.in);

@@ -6,11 +6,11 @@
 public class ClassesWrapper{
 
     public static void main(String[] args) {
-        Integer idade = new Integer(31);
-        Double preco = new Double("12.45");
+        Integer idade = 31;
+        Double preco = 12.45;
         int i = preco.intValue();
         byte b = preco.byteValue();
-        Boolean casado = new Boolean("yes");
+        Boolean casado = true;
 
         double d1 = Double.parseDouble("123.45");
         int i1 = Integer.parseInt("123");
@@ -18,7 +18,8 @@ public class ClassesWrapper{
 
         int i2 = Integer.valueOf("101011", 2);
 
-        
+        System.out.println(i+b+d1+i1+f1+i2+idade);
+        System.out.println(casado);
 
     }
 } 

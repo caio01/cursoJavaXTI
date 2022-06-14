@@ -4,8 +4,6 @@
  * Cálculo da Raiz Quadrada por Peel
  */
 
-import java.lang.Class.DesafioRaizQuad;
-
 public class DesafioRaizQuadTest {
     public static void main(String[] args) {
         DesafioRaizQuad r = new DesafioRaizQuad();

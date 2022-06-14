@@ -24,6 +24,7 @@ public class While_DoWhile {
     ArrayList<String> produtos = new ArrayList<>();
     Scanner s = new Scanner(System.in);
     System.out.println("Liste seus produtos: Para sair, digite FIM");
+    s.close();
 
     String produto;
     while(!"FIM".equals(produto = s.nextLine())){

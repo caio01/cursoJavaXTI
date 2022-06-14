@@ -13,6 +13,7 @@ public class ArrayMultidimensional {
             {"Ricardo","M","DF"},
             {"Sandra","F","MA"}
         };
+        System.out.println(uma);
         System.out.println(duas.length);
         System.out.println(duas[0].length);
 

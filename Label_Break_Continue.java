@@ -29,8 +29,9 @@ public class Label_Break_Continue {
         for(int a= 0; a < matrix.length; a++){
             System.out.print("A ");
             for(int b = 0; b < matrix[a].length; b++){
-                System.out.print("TRUE ");
-                break busca;
+                if(b<3){
+                    break busca;
+                }
             }
             System.out.println("B ");
         }

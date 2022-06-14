@@ -3,8 +3,6 @@
  * Aula 036 - Curso Java XTI
  */
 
-import java.lang.Class.Conta;
-
 public class ContaTest {
     public static void main(String[] args){
 
