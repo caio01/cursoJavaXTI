@@ -3,6 +3,7 @@
  * Aula 036 - Curso Java XTI
  */
 
+package part2;
 
 public class Conta {
     
