@@ -1,6 +1,6 @@
 /**
  * @author Caio Oliveira
- * Aula 053s - Curso Java XTI
+ * Aula 053 - Curso Java XTI
 */
 
 package part3;
