@@ -19,6 +19,7 @@ public class Janela extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(300, 300);
         setVisible(true);
+        
 
     }
 
