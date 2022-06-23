@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 public class DesafioArmazenarContas {
     private Path path = Paths
-            .get("C:/Users/Caio Oliveira/Documents/cursoJavaXTI/part3/DesafioArmazenarConta/conta.txt");
+            .get("C:/Users/cinacio/Documents/cursoJavaXTI/part3/conta.txt");
     private Charset utf8 = StandardCharsets.UTF_8;
 
     public void armazenarContas(ArrayList<Conta> contas) throws IOException {

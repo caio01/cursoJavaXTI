@@ -15,7 +15,7 @@ public class ContaConjunta {
         if (saldo >= valor) {
             int saldoOriginal = saldo;
             System.out.println(cliente + " esperando.");
-            Thread.sleep(1000);
+            //Thread.sleep(1000);
             saldo -= valor;
             String msg = cliente + " sacou " + valor
                     + " [Saldo original= " + saldoOriginal
