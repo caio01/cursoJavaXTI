@@ -1,6 +1,7 @@
 /**
  * @author Caio Oliveira
  * Aulas 054 à 056 - Curso Java XTI
+ * part. 3 -> Vídeos 039 à 064
 */
 
 package part3;
@@ -8,35 +9,34 @@ package part3;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Multicatch{
+public class Multicatch {
 
     public static void dividir(Scanner s)
-        throws InputMismatchException, ArithmeticException
-    {
+            throws InputMismatchException, ArithmeticException {
         System.out.println("Primeiro número: ");
-                int a = s.nextInt();
-                System.out.println("Segundo número: ");
-                int b = s.nextInt();
+        int a = s.nextInt();
+        System.out.println("Segundo número: ");
+        int b = s.nextInt();
 
-                System.out.println(a / b);
+        System.out.println(a / b);
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Scanner s = new Scanner(System.in);
         boolean continua = true;
-        do{
+        do {
             try {
                 dividir(s);
                 continua = false;
 
-            }catch(InputMismatchException | ArithmeticException e1){
+            } catch (InputMismatchException | ArithmeticException e1) {
                 System.out.println("Numero inválido!");
-                //e1.printStackTrace();
-                //e1.getStackTrace();
-                //e1.getMessage();
+                // e1.printStackTrace();
+                // e1.getStackTrace();
+                // e1.getMessage();
                 s.nextLine();
             }
-        }while(continua);   
+        } while (continua);
     }
 }

@@ -1,6 +1,7 @@
 /**
  * @author Caio Oliveira
  * Aulas 039 e 040 - Curso Java XTI
+ * part. 3 -> Vídeos 039 à 064
 */
 
 package part3;
@@ -10,26 +11,26 @@ public class Funcionario {
     private String nome;
     private boolean ativo;
 
-    public void setNome(String nome){
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public String getNome(){
+    public String getNome() {
         return nome;
     }
 
-    public void setAtivo(boolean ativo){
-        if(ativo = true){
+    public void setAtivo(boolean ativo) {
+        if (ativo = true) {
             Funcionario.qtdFunc++;
         }
         this.ativo = ativo;
     }
 
-    public boolean isAtivo(){
+    public boolean isAtivo() {
         return ativo;
     }
 
-    public static int QtdFunc(){
+    public static int QtdFunc() {
         return qtdFunc;
     }
 

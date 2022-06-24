@@ -1,26 +1,27 @@
 /**
  * @author Caio Oliveira
  * Aula 046 - Curso Java XTI
+ * part. 3 -> Vídeos 039 à 064
 */
 package part3;
 
 public class EnumTest {
 
-    public static void andar(Medida medida, int total){
-        if(medida == Medida.M){
+    public static void andar(Medida medida, int total) {
+        if (medida == Medida.M) {
             //
         }
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         System.out.println(PecasXadrez.BISPO);
         System.out.println(Medida.M.titulo);
 
-        for(Medida m : Medida.values()){
+        for (Medida m : Medida.values()) {
             System.out.println(m + ": " + m.titulo);
 
-        andar(Medida.M, 100);
+            andar(Medida.M, 100);
         }
     }
 }

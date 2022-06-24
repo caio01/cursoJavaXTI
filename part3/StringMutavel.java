@@ -1,10 +1,12 @@
-package part3;
 /**
  * @author Caio Oliveira
  * Aula 060 - Curso Java XTI
-*/
+ * part. 3 -> Vídeos 039 à 064
+ */
+package part3;
+
 public class StringMutavel {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         StringBuffer s0 = new StringBuffer();
         StringBuilder s1 = new StringBuilder("Java");

@@ -1,6 +1,7 @@
 /**
  * @author Caio Oliveira
  * Aula 053 - Curso Java XTI
+ * part. 3 -> Vídeos 039 à 064
 */
 
 package part3;
@@ -8,14 +9,14 @@ package part3;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class DividePorZero{
-    public static void main(String[] args){
+public class DividePorZero {
+    public static void main(String[] args) {
 
         Scanner s = new Scanner(System.in);
         boolean continua = true;
-        do{
+        do {
             try {
-                
+
                 System.out.println("Primeiro número: ");
                 int a = s.nextInt();
                 System.out.println("Segundo número: ");
@@ -25,15 +26,15 @@ public class DividePorZero{
                 s.close();
                 continua = false;
 
-            }catch(InputMismatchException e1){
+            } catch (InputMismatchException e1) {
                 System.out.println("Numeros devem ser inteiros.");
                 s.nextLine();
-            }catch(ArithmeticException e2){
+            } catch (ArithmeticException e2) {
                 System.out.println("Divisor deve ser diferente de zero.");
                 s.nextLine();
-            }finally{
+            } finally {
                 System.out.println("Finally executado!");
             }
-        }while(continua);   
+        } while (continua);
     }
 }
