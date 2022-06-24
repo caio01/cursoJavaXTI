@@ -1,6 +1,7 @@
 /**
  * @author Caio Oliveira
  * Aula 098 - Curso Java XTI
+ * part. 6 -> Vídeos 097 à 116
 */
 package part6.refinado;
 
@@ -9,22 +10,22 @@ import javax.swing.JFrame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Aninhamento extends JFrame{
+public class Aninhamento extends JFrame {
 
     JButton botao;
-    public Aninhamento(){
+
+    public Aninhamento() {
         super("Aninhamento");
 
         botao = new JButton("Ok");
         botao.addActionListener(new ListenerAninhado());
-        
-        
+
         getContentPane().add(botao);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(300,300);
-        setVisible(true);       
+        setSize(300, 300);
+        setVisible(true);
     }
-    
+
     public class ListenerAninhado implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
