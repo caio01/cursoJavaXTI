@@ -1,6 +1,7 @@
 /**
  * @author Caio Oliveira
  * Aula 074 - Curso Java XTI
+ * part. 4 -> Vídeos 065 à 080
 */
 package part4.GUI;
 
@@ -19,7 +20,6 @@ public class Janela extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(300, 300);
         setVisible(true);
-        
 
     }
 

@@ -1,3 +1,11 @@
+/**
+ * @author Caio Oliveira
+ * Aula 080 - Curso Java XTI
+ * part. 4 -> Vídeos 065 à 080
+ * Desafio Calculadora
+ * Criar uma Interface semelhante à uma calculadora
+ * Com o que foi aprendido até o momento.
+*/
 package part4.GUI;
 
 import java.awt.BorderLayout;
