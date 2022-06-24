@@ -29,29 +29,30 @@ public class ChatClient extends JFrame {
     String nome;
     JTextArea textoRecebido;
     Scanner leitor;
-    
+
     private class EscutaServidor implements Runnable {
         @Override
         public void run() {
-            try{
+            try {
                 String texto;
-                while((texto = leitor.nextLine()) != null){
+                while ((texto = leitor.nextLine()) != null) {
                     textoRecebido.append(texto + "\n");
                 }
-            } catch (Exception e) {}
+            } catch (Exception e) {
+            }
         }
-        
+
     }
 
     public ChatClient(String nome) throws UnknownHostException, IOException {
         super("Chat: " + nome);
         this.nome = nome;
 
-        //Font fonte = new Font("Serif", Font.PLAIN, 26);
+        // Font fonte = new Font("Serif", Font.PLAIN, 26);
         textoParaEnviar = new JTextField();
-        //textoParaEnviar.setFont(fonte);
+        // textoParaEnviar.setFont(fonte);
         JButton botao = new JButton("Enviar");
-        //botao.setFont(fonte);
+        // botao.setFont(fonte);
         botao.addActionListener(new EnviarListener());
         Container envio = new JPanel();
         envio.setLayout(new BorderLayout());
@@ -67,27 +68,28 @@ public class ChatClient extends JFrame {
         configurarRede();
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(500,500);
+        setSize(500, 500);
         setVisible(true);
     }
 
-    public class EnviarListener implements ActionListener{
+    public class EnviarListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
             escritor.println(nome + " : " + textoParaEnviar.getText());
             escritor.flush();
             textoParaEnviar.setText("");
-            textoParaEnviar.requestFocus();            
+            textoParaEnviar.requestFocus();
         }
 
     }
 
     public void configurarRede() throws UnknownHostException, IOException {
-        socket = new Socket("192.168.250.4", 5000);
+        socket = new Socket("192.168.1.10", 5000);
         escritor = new PrintWriter(socket.getOutputStream());
         leitor = new Scanner(socket.getInputStream());
         new Thread(new EscutaServidor()).start();
     }
+
     public static void main(String[] args) throws UnknownHostException, IOException {
         new ChatClient("Caio");
         new ChatClient("Maria");

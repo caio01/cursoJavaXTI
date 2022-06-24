@@ -20,44 +20,49 @@ public class ChatServer {
     public ChatServer() {
         try {
             server = new ServerSocket(5000);
-            while(true) {
+            while (true) {
                 Socket socket = server.accept();
                 new Thread(new EscutaCliente(socket)).start();
                 PrintWriter p = new PrintWriter(socket.getOutputStream());
                 escritores.add(p);
             }
-        }catch (IOException e) {}
+        } catch (IOException e) {
+        }
     }
 
     private void encaminharParaTodos(String texto) {
-        try{
+        try {
             for (PrintWriter w : escritores) {
                 w.println(texto);
                 w.flush();
             }
-        } catch (Exception e) {}
+        } catch (Exception e) {
+        }
     }
 
     private class EscutaCliente implements Runnable {
 
         Scanner leitor;
+
         public EscutaCliente(Socket socket) {
-            try{
+            try {
                 leitor = new Scanner(socket.getInputStream());
-            } catch (Exception e) {}
+            } catch (Exception e) {
+            }
         }
 
         @Override
         public void run() {
-            try{
+            try {
                 String texto;
-                while((texto = leitor.nextLine()) != null){
+                while ((texto = leitor.nextLine()) != null) {
                     System.out.println(texto);
                     encaminharParaTodos(texto);
                 }
-            } catch (Exception e) {}
+            } catch (Exception e) {
+            }
         }
-        
+
     }
 
     public static void main(String[] args) throws IOException {
