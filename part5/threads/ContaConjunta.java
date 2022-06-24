@@ -1,6 +1,7 @@
 /**
  * @author Caio Oliveira
- *         Aula 095 - Curso Java XTI
+ * Aula 095 - Curso Java XTI
+ * part. 5 -> Vídeos 081 à 096
  */
 package part5.threads;
 
@@ -15,7 +16,7 @@ public class ContaConjunta {
         if (saldo >= valor) {
             int saldoOriginal = saldo;
             System.out.println(cliente + " esperando.");
-            //Thread.sleep(1000);
+            // Thread.sleep(1000);
             saldo -= valor;
             String msg = cliente + " sacou " + valor
                     + " [Saldo original= " + saldoOriginal

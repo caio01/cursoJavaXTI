@@ -1,6 +1,7 @@
 /**
  * @author Caio Oliveira
- *         Aula 093 - Curso Java XTI
+ * Aula 093 - Curso Java XTI
+ * part. 5 -> Vídeos 081 à 096
  */
 package part5.threads;
 
