@@ -1,36 +1,36 @@
 /**
  * @author Caio Oliveira
  * Aula 028 - Curso Java XTI
+ * part. 2 -> Vídeos 020 à 038
 */
 package part2;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class While_DoWhile {
     public static void main(String[] args) {
         int i = 0;
-        while(i < 2){
+        while (i < 2) {
             System.out.println(i);
             i++;
         }
 
-        do{
+        do {
             System.out.println(i);
             i++;
-        }while(i<2);
-    
+        } while (i < 2);
 
+        ArrayList<String> produtos = new ArrayList<>();
+        Scanner s = new Scanner(System.in);
+        System.out.println("Liste seus produtos: Para sair, digite FIM");
+        s.close();
 
-    ArrayList<String> produtos = new ArrayList<>();
-    Scanner s = new Scanner(System.in);
-    System.out.println("Liste seus produtos: Para sair, digite FIM");
-    s.close();
+        String produto;
+        while (!"FIM".equals(produto = s.nextLine())) {
+            produtos.add(produto);
+        }
 
-    String produto;
-    while(!"FIM".equals(produto = s.nextLine())){
-        produtos.add(produto);
-    }
-
-    System.out.println(produtos.toString());
+        System.out.println(produtos.toString());
     }
 }

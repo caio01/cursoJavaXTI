@@ -1,12 +1,13 @@
 /**
  * @author Caio Oliveira
  * Aula 036 - Curso Java XTI
+ * part. 2 -> Vídeos 020 à 038
  */
 
 package part2;
 
 public class ContaTest {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Conta conta = new Conta();
         conta.cliente = "Caio";

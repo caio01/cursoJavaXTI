@@ -1,10 +1,12 @@
 /**
  * @author Caio Oliveira
  * Aula 024 - Curso Java XTI
+ * part. 2 -> Vídeos 020 à 038
 */
 package part2;
-public class Switch_{
-    public static void main(String[] args){
+
+public class Switch_ {
+    public static void main(String[] args) {
         char sexo = 'M';
 
         switch (sexo) {

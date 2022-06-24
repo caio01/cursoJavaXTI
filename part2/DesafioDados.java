@@ -1,25 +1,27 @@
 /**
  * @author Caio Oliveira
  * Aula 025 - Curso Java XTI
+ * part. 2 -> Vídeos 020 à 038
  * Desafio para que o usuário tente acertar
  * o número do dado gerado randomicamente
  */
 package part2;
+
 import java.util.Random;
 import javax.swing.JOptionPane;
 
 public class DesafioDados {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         String msg = JOptionPane.showInputDialog("Qual seu palpite?");
         Integer palpite = Integer.parseInt(msg);
 
         Random r = new Random();
-        int numDado = r.nextInt(6)+1;
+        int numDado = r.nextInt(6) + 1;
 
-        if(palpite == numDado){
+        if (palpite == numDado) {
             System.out.println("Parabéns, você errou!");
-        }else{
+        } else {
             System.out.println("Que pena, você errou! O número do dado foi: " + numDado);
         }
-    }    
+    }
 }
